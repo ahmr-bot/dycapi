@@ -39,6 +39,10 @@ app.get('/yiyan/img', (req, res) => {
     res.set('Content-Type', 'image/jpeg');
   });
 });
+// 处理 default 请求
+app.get('/', (req, res) => {
+  res.send('Welcome to dyc API');
+});
 
 // 监听端口 3000
 app.listen(3000, () => {
