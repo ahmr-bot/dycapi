@@ -14,5 +14,5 @@
       }
   }
   ```
-- /yiyan/img `GET`
+- /yiyan/img `GET`  
   返回 MIME `image/jpeg`
