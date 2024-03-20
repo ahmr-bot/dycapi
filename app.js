@@ -42,6 +42,7 @@ app.all("*", (req, res) => {
     message: "Not found.",
     data: {},
   };
+  res.status(404);
   res.json(data);
 });
 
