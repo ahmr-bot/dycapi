@@ -10,7 +10,7 @@ class Getter {
     // 从 yuluData 数组中随机选择一行
     let randomLine = yuluData[Math.floor(Math.random() * yuluData.length)];
     // 去除换行符
-    randomLine = randomLine.substring(0, randomLine.length - 1);
+    randomLine = randomLine.replace("\n", "").replace("\r", "");
     if (!json) return randomLine;
     const json_data = {
       text: randomLine,
